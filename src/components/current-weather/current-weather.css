@@ -1,0 +1,105 @@
+.weather {
+  align-content: center;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0);
+  color: floralwhite;
+  /* background-color: #333; */
+  margin: 20px auto 0 auto;
+  padding-left: 10px;
+}
+.weather:hover {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(181, 45, 253, 1) 100%
+  );
+}
+
+
+.top:hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background: rgb(182, 174, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(182, 174, 238, 1) 0%,
+    rgba(66, 13, 214, 1) 100%
+  );
+  border-radius: 20px;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+.city:hover {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+.des {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+.weather-icon {
+  width: 100px;
+}
+.weather-icon:hover {
+  width: 120px;
+}
+.temp {
+  font-weight: 600;
+  font-size: 60px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 1px;
+  padding-right: 30px;
+}
+
+.details {
+  width: 50%;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.param-label {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.param-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.label-top {
+  border-bottom: 1px solid #fff;
+}
