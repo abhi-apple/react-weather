@@ -9,8 +9,6 @@ function App() {
   const [currentweth, setcurrentweth] = useState(null);
   const [forcast, setforcast] = useState(null);
   const handleonsearchchange = (searchdata) => {
-    // console.log(searchdata)
-
     const [lat, lon] = searchdata.value.split(" ");
     const currnetweatherfetech = fetch(
       `${WEATHER_API}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_KEY}&units=metric`
@@ -31,15 +29,13 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  // console.log(currentweth);
   console.log(forcast);
   return (
     <div className="container ">
       <Search onsearchchange={handleonsearchchange} />
       {currentweth && <Currentweatehr data={currentweth} />}
-      {forcast && <Forecast data={forcast}/>}
+      {forcast && <Forecast data={forcast} />}
     </div>
-    
   );
 }
 
